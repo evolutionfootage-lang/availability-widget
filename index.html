@@ -47,9 +47,9 @@ h2{font-family:DIN,"DIN Next","Arial Narrow",sans-serif;font-weight:400;font-siz
 .red .where li{font-size:16px}
 .where li.hl{border-left-color:var(--brand);font-family:AvenirH,Arial,sans-serif}
 .soon{display:flex;align-items:center;justify-content:center;min-height:220px;background:#f3f3f3;border-radius:10px;font-family:DIN,"Arial Narrow",sans-serif;font-size:30px;color:#444;text-align:center;padding:20px}
-.red .d{aspect-ratio:1/0.95}
-.red .d .n{left:0;right:0;top:3px;text-align:center}
-.red .d .i{left:50%;right:auto;transform:translateX(-50%);bottom:4px;width:14px;height:14px}
+.red .d,.multi .d{aspect-ratio:1/0.95}
+.red .d .n,.multi .d .n{left:0;right:0;top:3px;text-align:center}
+.red .d .i,.multi .d .i{left:50%;right:auto;transform:translateX(-50%);bottom:4px;width:14px;height:14px}
 .err{padding:20px;font-size:16px}
 @media (max-width:760px){
  .wrap{padding:0 16px}
@@ -63,7 +63,7 @@ h2{font-family:DIN,"DIN Next","Arial Narrow",sans-serif;font-weight:400;font-siz
  .mname{font-size:20px}.g{gap:3px}.h{font-size:10px;letter-spacing:.2px}
  .d,.red .d{font-size:13px;border-radius:5px;aspect-ratio:1/1}
  .d .n,.red .d .n{left:0;right:0;top:2px;text-align:center}
- .d .i,.red .d .i{left:50%;right:auto;transform:translateX(-50%);width:12px;height:12px;bottom:3px}
+ .d .i,.red .d .i,.multi .d .i{left:50%;right:auto;transform:translateX(-50%);width:12px;height:12px;bottom:3px}
  .wh{font-size:19px}.where li,.red .where li{font-size:15px;padding:8px 0 8px 10px}
  .soon{font-size:24px;min-height:160px}
 }
@@ -97,7 +97,7 @@ function block(b){
  var cal=b.comingSoon?'<div class="soon">Dates coming soon</div>':'<div class="months">'+b.months.map(function(x){return month(x[0],x[1],b.days)}).join('')+'</div>';
  var li=b.list.map(function(r){return '<li class="'+(r.hl?'hl':'')+'">'+esc(r.label)+', '+esc(r.dates)+'</li>'}).join('');
  var side=li?'<aside class="where"><div class="wh">Where our team is</div><ul>'+li+'</ul></aside>':'';
- return '<div class="block">'+(b.title?'<div class="btitle">'+esc(b.title)+'</div>':'')+'<div class="grid"'+(side?'':' style="grid-template-columns:1fr"')+'>'+cal+side+'</div></div>';}
+ return '<div class="block'+(b.months.length>1?' multi':'')+'">'+(b.title?'<div class="btitle">'+esc(b.title)+'</div>':'')+'<div class="grid"'+(side?'':' style="grid-template-columns:1fr"')+'>'+cal+side+'</div></div>';}
 var key='<div class="key">'+['available','waitlist','locked'].map(function(s){return '<span class="k '+s+'"><span class="sw">'+ICON[s]+'</span>'+LABEL[s]+'</span>'}).join('')+'</div>';
 var head='<h2>Our dates in your area</h2><p class="lead">Green days are open. Amber days have a waitlist. Red days are booked.</p>'+key;
 var root=document.getElementById('root'),base=new URL('data/',location.href).href;

@@ -1,0 +1,26 @@
+{
+ "kind": "town",
+ "title": null,
+ "comingSoon": true,
+ "months": [],
+ "days": {},
+ "list": [
+  {
+   "label": "Toowoomba",
+   "dates": "Tue 3 to Wed 4 Nov",
+   "hl": false
+  },
+  {
+   "label": "Bundaberg",
+   "dates": "Mon 9 to Fri 13 Nov",
+   "hl": false
+  },
+  {
+   "label": "Sunshine Coast",
+   "dates": "Tue 17 to Thu 19 Nov",
+   "hl": false
+  }
+ ],
+ "region": "gympie",
+ "updated": "2026-10-12T11:06+10:00"
+}

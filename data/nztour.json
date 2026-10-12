@@ -1,0 +1,90 @@
+{
+ "kind": "nz",
+ "title": null,
+ "comingSoon": false,
+ "months": [
+  [
+   2027,
+   2
+  ],
+  [
+   2027,
+   3
+  ]
+ ],
+ "days": {
+  "2027-02-01": "available",
+  "2027-02-02": "available",
+  "2027-02-03": "available",
+  "2027-02-04": "available",
+  "2027-02-05": "available",
+  "2027-02-09": "available",
+  "2027-02-10": "available",
+  "2027-02-11": "available",
+  "2027-02-12": "available",
+  "2027-02-15": "available",
+  "2027-02-16": "available",
+  "2027-02-17": "waitlist",
+  "2027-02-18": "available",
+  "2027-02-19": "available",
+  "2027-02-22": "waitlist",
+  "2027-02-23": "available",
+  "2027-02-24": "available",
+  "2027-02-25": "available",
+  "2027-02-26": "waitlist",
+  "2027-03-01": "waitlist",
+  "2027-03-02": "available",
+  "2027-03-03": "available",
+  "2027-03-04": "available",
+  "2027-03-05": "locked",
+  "2027-03-08": "available",
+  "2027-03-09": "available",
+  "2027-03-10": "available",
+  "2027-03-11": "available",
+  "2027-03-12": "available",
+  "2027-03-15": "available",
+  "2027-03-16": "available",
+  "2027-03-17": "available",
+  "2027-03-18": "available",
+  "2027-03-19": "available"
+ },
+ "list": [
+  {
+   "label": "Northland",
+   "dates": "Mon 1 to Fri 5 Feb",
+   "hl": false
+  },
+  {
+   "label": "Auckland north, Rodney & Hibiscus",
+   "dates": "Tue 9 to Fri 12 Feb",
+   "hl": false
+  },
+  {
+   "label": "Waikato",
+   "dates": "Mon 15 to Fri 19 Feb",
+   "hl": false
+  },
+  {
+   "label": "Bay of Plenty, Rotorua & Lakes",
+   "dates": "Mon 22 to Fri 26 Feb",
+   "hl": false
+  },
+  {
+   "label": "Hawke's Bay",
+   "dates": "Mon 1 to Fri 5 Mar",
+   "hl": false
+  },
+  {
+   "label": "Taranaki",
+   "dates": "Mon 8 to Fri 12 Mar",
+   "hl": false
+  },
+  {
+   "label": "Kapiti, Hutt & Wellington",
+   "dates": "Mon 15 to Fri 19 Mar",
+   "hl": false
+  }
+ ],
+ "region": "nztour",
+ "updated": "2026-10-12T11:06+10:00"
+}

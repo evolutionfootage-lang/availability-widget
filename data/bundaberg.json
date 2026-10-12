@@ -1,0 +1,37 @@
+{
+ "kind": "town",
+ "title": null,
+ "comingSoon": false,
+ "months": [
+  [
+   2026,
+   11
+  ]
+ ],
+ "days": {
+  "2026-11-09": "available",
+  "2026-11-10": "available",
+  "2026-11-11": "available",
+  "2026-11-12": "available",
+  "2026-11-13": "waitlist"
+ },
+ "list": [
+  {
+   "label": "Toowoomba",
+   "dates": "Tue 3 to Wed 4 Nov",
+   "hl": false
+  },
+  {
+   "label": "Bundaberg",
+   "dates": "Mon 9 to Fri 13 Nov",
+   "hl": true
+  },
+  {
+   "label": "Sunshine Coast",
+   "dates": "Tue 17 to Thu 19 Nov",
+   "hl": false
+  }
+ ],
+ "region": "bundaberg",
+ "updated": "2026-10-12T11:06+10:00"
+}

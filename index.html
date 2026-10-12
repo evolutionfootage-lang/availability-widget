@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our dates in your area | Evolution Archery</title>
+<style>
+@font-face{font-family:DIN;src:url(https://static.parastorage.com/fonts/v2/b46aabec-b529-45a8-a0fe-2abaf6daf369/v1/dinneuzeitgroteskltw01-_812426.latin.woff2) format("woff2");font-display:swap}
+@font-face{font-family:AvenirL;src:url(https://static.parastorage.com/fonts/v2/af36905f-3c92-4ef9-b0c1-f91432f16ac1/v1/avenir-lt-w01_35-light1475496.woff2) format("woff2");font-display:swap}
+@font-face{font-family:AvenirH;src:url(https://static.parastorage.com/fonts/v2/74290729-59ae-4129-87d0-2eec3974dce1/v1/avenir-lt-w01_85-heavy1475544.woff2) format("woff2");font-display:swap}
+:root{--green:#1B7A3A;--amber:#F2B200;--red:#B3121B;--brand:#EB0000;--brand2:#FF4040;--ink:#111}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:transparent}
+body{font-family:AvenirL,Avenir,"Helvetica Neue",Arial,sans-serif;color:var(--ink)}
+#cal-section{position:relative;padding:40px 0 40px;overflow:hidden}
+#cal-section.white{background:#fff}
+#cal-section.red{background:var(--brand2);padding-top:28px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.red .wrap{max-width:1100px}
+h2{font-family:DIN,"DIN Next","Arial Narrow",sans-serif;font-weight:400;font-size:40px;line-height:1.1;letter-spacing:.2px}
+.red h2,.red .lead{color:#fff}
+.lead{font-size:20px;margin:10px 0 18px}
+.key{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.k{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #d9d9d9;border-radius:999px;padding:6px 14px 6px 6px;font-family:AvenirH,Arial,sans-serif;font-size:15px}
+.sw{width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+.sw svg{width:16px;height:16px}
+.k.available .sw{background:var(--green);color:#fff}.k.waitlist .sw{background:var(--amber);color:#111}.k.locked .sw{background:var(--red);color:#fff}
+.block{background:#fff;border-radius:12px;border:1px solid #e3e3e3;box-shadow:0 2px 10px rgba(0,0,0,.06);padding:24px;margin-bottom:24px}
+.red .block{border:none}
+.btitle{font-family:DIN,"Arial Narrow",sans-serif;font-size:30px;margin-bottom:12px;border-left:5px solid var(--brand);padding-left:12px;line-height:1}
+.grid{display:grid;grid-template-columns:1fr 330px;gap:32px;align-items:start}
+.red .grid{grid-template-columns:1fr 300px;gap:28px}
+.months{display:flex;gap:24px}
+.month{flex:1;min-width:0}
+.mname{font-family:DIN,"Arial Narrow",sans-serif;font-size:24px;margin-bottom:8px}
+.g{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.h{font-family:AvenirH,Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:#555;text-align:center;padding-bottom:4px}
+.d{position:relative;aspect-ratio:1/0.82;border-radius:7px;font-size:16px}
+.d .n{position:absolute;left:8px;top:6px;font-family:AvenirH,Arial,sans-serif}
+.d .i{position:absolute;right:6px;bottom:5px;width:20px;height:20px}
+.d .i svg{width:100%;height:100%;display:block}
+.d.plain{background:#f3f3f3;color:#6b6b6b}
+.d.out{background:transparent}
+.d.available{background:var(--green);color:#fff}
+.d.waitlist{background:var(--amber);color:#111}
+.d.locked{background:var(--red);color:#fff}
+.where{background:#fafafa;border:1px solid #e6e6e6;border-radius:10px;padding:18px 18px 8px}
+.wh{font-family:DIN,"Arial Narrow",sans-serif;font-size:22px;margin-bottom:10px}
+.where ul{list-style:none}
+.where li{font-size:17px;padding:10px 0 10px 12px;border-top:1px solid #e6e6e6;border-left:4px solid transparent}
+.red .where li{font-size:16px}
+.where li.hl{border-left-color:var(--brand);font-family:AvenirH,Arial,sans-serif}
+.soon{display:flex;align-items:center;justify-content:center;min-height:220px;background:#f3f3f3;border-radius:10px;font-family:DIN,"Arial Narrow",sans-serif;font-size:30px;color:#444;text-align:center;padding:20px}
+.red .d{aspect-ratio:1/0.95}
+.red .d .n{left:0;right:0;top:3px;text-align:center}
+.red .d .i{left:50%;right:auto;transform:translateX(-50%);bottom:4px;width:14px;height:14px}
+.err{padding:20px;font-size:16px}
+@media (max-width:760px){
+ .wrap{padding:0 16px}
+ #cal-section{padding:28px 0 28px}
+ h2{font-size:28px}.lead{font-size:16px}
+ .key{gap:6px}.k{font-size:13px;padding:4px 10px 4px 4px;gap:6px}
+ .sw{width:22px;height:22px}.sw svg{width:13px;height:13px}
+ .block{padding:14px;border-radius:10px}.btitle{font-size:24px}
+ .grid,.red .grid{grid-template-columns:1fr;gap:16px}
+ .months{flex-direction:column;gap:16px}
+ .mname{font-size:20px}.g{gap:3px}.h{font-size:10px;letter-spacing:.2px}
+ .d,.red .d{font-size:13px;border-radius:5px;aspect-ratio:1/1}
+ .d .n,.red .d .n{left:0;right:0;top:2px;text-align:center}
+ .d .i,.red .d .i{left:50%;right:auto;transform:translateX(-50%);width:12px;height:12px;bottom:3px}
+ .wh{font-size:19px}.where li,.red .where li{font-size:15px;padding:8px 0 8px 10px}
+ .soon{font-size:24px;min-height:160px}
+}
+</style></head><body>
+<section id="cal-section" class="white"><div class="wrap" id="root"></div></section>
+<script>
+(function(){
+var P=new URLSearchParams(location.search),region=(P.get('region')||'toowoomba').toLowerCase();
+var PAGES={oshc:{bg:'red',files:['oshc-brisbane','oshc-sunshinecoast']}};
+var page=PAGES[region]||{bg:'white',files:[region]};
+var bg=P.get('bg')||page.bg;
+document.getElementById('cal-section').className=bg==='red'?'red':'white';
+var LABEL={available:'Available',waitlist:'Waitlist started',locked:'Locked in'};
+var DOW=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],MON=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+var MF=['','January','February','March','April','May','June','July','August','September','October','November','December'];
+var ICON={available:'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+waitlist:'<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M10 5.5V10l3 2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
+locked:'<svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="9" width="12" height="9" rx="1.5" fill="currentColor"/><path d="M6.5 9V6.5a3.5 3.5 0 0 1 7 0V9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>'};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function iso(y,m,d){return y+'-'+('0'+m).slice(-2)+'-'+('0'+d).slice(-2)}
+function month(y,m,days){
+ var first=(new Date(Date.UTC(y,m-1,1)).getUTCDay()+6)%7,n=new Date(Date.UTC(y,m,0)).getUTCDate(),h='';
+ for(var i=0;i<7;i++)h+='<div class="h">'+DOW[i]+'</div>';
+ for(i=0;i<first;i++)h+='<div class="d out"></div>';
+ for(var d=1;d<=n;d++){var s=days[iso(y,m,d)],wd=(first+d-1)%7;
+  if(s)h+='<div class="d '+s+'" role="img" aria-label="'+DOW[wd]+' '+d+' '+MON[m]+', '+LABEL[s]+'"><span class="n" aria-hidden="true">'+d+'</span><span class="i">'+ICON[s]+'</span></div>';
+  else h+='<div class="d plain"><span class="n">'+d+'</span></div>';}
+ var tail=(7-(first+n)%7)%7;for(i=0;i<tail;i++)h+='<div class="d out"></div>';
+ return '<div class="month"><div class="mname">'+MF[m]+' '+y+'</div><div class="g">'+h+'</div></div>';}
+function block(b){
+ var cal=b.comingSoon?'<div class="soon">Dates coming soon</div>':'<div class="months">'+b.months.map(function(x){return month(x[0],x[1],b.days)}).join('')+'</div>';
+ var li=b.list.map(function(r){return '<li class="'+(r.hl?'hl':'')+'">'+esc(r.label)+', '+esc(r.dates)+'</li>'}).join('');
+ var side=li?'<aside class="where"><div class="wh">Where our team is</div><ul>'+li+'</ul></aside>':'';
+ return '<div class="block">'+(b.title?'<div class="btitle">'+esc(b.title)+'</div>':'')+'<div class="grid"'+(side?'':' style="grid-template-columns:1fr"')+'>'+cal+side+'</div></div>';}
+var key='<div class="key">'+['available','waitlist','locked'].map(function(s){return '<span class="k '+s+'"><span class="sw">'+ICON[s]+'</span>'+LABEL[s]+'</span>'}).join('')+'</div>';
+var head='<h2>Our dates in your area</h2><p class="lead">Green days are open. Amber days have a waitlist. Red days are booked.</p>'+key;
+var root=document.getElementById('root'),base=new URL('data/',location.href).href;
+Promise.all(page.files.map(function(f){return fetch(base+f+'.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw r.status;return r.json()})}))
+.then(function(bs){root.innerHTML=head+bs.map(block).join('');document.body.setAttribute('data-ready','1')})
+.catch(function(){root.innerHTML=head+'<div class="block"><div class="soon">Dates coming soon</div></div>';document.body.setAttribute('data-ready','1')});
+})();
+</script></body></html>

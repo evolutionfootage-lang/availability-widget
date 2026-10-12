@@ -55,6 +55,8 @@ h2{font-family:DIN,"DIN Next","Arial Narrow",sans-serif;font-weight:400;font-siz
 .multi .d .n{top:2px}
 .multi .d .i{width:12px;height:12px;bottom:3px}
 .multi .where li{font-size:15px}
+.red .d.plain,.red .d.available,.red .d.waitlist,.red .d.locked,.multi .d.plain,.multi .d.available,.multi .d.waitlist,.multi .d.locked{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.red .d .n,.multi .d .n,.red .d .i,.multi .d .i{position:static;transform:none;line-height:1}
 .err{padding:20px;font-size:16px}
 @media (max-width:760px){
  .wrap{padding:0 16px}
@@ -69,6 +71,9 @@ h2{font-family:DIN,"DIN Next","Arial Narrow",sans-serif;font-weight:400;font-siz
  .d,.red .d{font-size:13px;border-radius:5px;aspect-ratio:1/1}
  .d .n,.red .d .n{left:0;right:0;top:2px;text-align:center}
  .d .i,.red .d .i,.multi .d .i{left:50%;right:auto;transform:translateX(-50%);width:12px;height:12px;bottom:3px}
+ .multi .grid{grid-template-columns:1fr;gap:16px}
+ .d.plain,.d.available,.d.waitlist,.d.locked{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+ .d .n,.d .i,.red .d .n,.red .d .i{position:static;transform:none;line-height:1}
  .wh{font-size:19px}.where li,.red .where li{font-size:15px;padding:8px 0 8px 10px}
  .soon{font-size:24px;min-height:160px}
 }

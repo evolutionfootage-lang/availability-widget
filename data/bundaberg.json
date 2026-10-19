@@ -12,7 +12,7 @@
   "2026-11-09": "available",
   "2026-11-10": "available",
   "2026-11-11": "available",
-  "2026-11-12": "available",
+  "2026-11-12": "locked",
   "2026-11-13": "waitlist"
  },
  "list": [
@@ -33,5 +33,5 @@
   }
  ],
  "region": "bundaberg",
- "updated": "2026-10-12T11:21+10:00"
+ "updated": "2026-10-19T19:11+10:00"
 }

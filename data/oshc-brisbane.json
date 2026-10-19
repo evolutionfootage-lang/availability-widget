@@ -1,6 +1,7 @@
 {
  "kind": "oshc",
  "title": "Brisbane",
+ "min": 1000,
  "comingSoon": false,
  "months": [
   [
@@ -14,6 +15,7 @@
  ],
  "days": {
   "2026-12-02": "waitlist",
+  "2026-12-10": "waitlist",
   "2026-12-14": "available",
   "2026-12-15": "available",
   "2026-12-16": "available",
@@ -23,13 +25,13 @@
   "2026-12-22": "available",
   "2026-12-23": "available",
   "2027-01-04": "available",
-  "2027-01-05": "available",
+  "2027-01-05": "waitlist",
   "2027-01-06": "locked",
   "2027-01-07": "waitlist",
   "2027-01-08": "available",
   "2027-01-11": "available",
-  "2027-01-12": "available",
-  "2027-01-13": "available",
+  "2027-01-12": "waitlist",
+  "2027-01-13": "waitlist",
   "2027-01-15": "available",
   "2027-01-18": "available",
   "2027-01-19": "available",
@@ -65,5 +67,5 @@
   }
  ],
  "region": "oshc-brisbane",
- "updated": "2026-10-12T11:21+10:00"
+ "updated": "2026-10-19T19:11+10:00"
 }

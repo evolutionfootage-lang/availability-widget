@@ -1,6 +1,7 @@
 {
  "kind": "oshc",
  "title": "Sunshine Coast",
+ "min": 900,
  "comingSoon": false,
  "months": [
   [
@@ -22,11 +23,8 @@
   "2026-12-22": "available",
   "2026-12-23": "available",
   "2027-01-04": "available",
-  "2027-01-05": "available",
   "2027-01-08": "available",
   "2027-01-11": "available",
-  "2027-01-12": "available",
-  "2027-01-13": "available",
   "2027-01-14": "waitlist",
   "2027-01-15": "available",
   "2027-01-18": "available",
@@ -63,5 +61,5 @@
   }
  ],
  "region": "oshc-sunshinecoast",
- "updated": "2026-10-12T11:21+10:00"
+ "updated": "2026-10-19T19:11+10:00"
 }

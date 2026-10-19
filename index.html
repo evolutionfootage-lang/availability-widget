@@ -24,6 +24,7 @@ h2{font-family:DIN,"DIN Next","Arial Narrow",sans-serif;font-weight:400;font-siz
 .block{background:#fff;border-radius:12px;border:1px solid #e3e3e3;box-shadow:0 2px 10px rgba(0,0,0,.06);padding:24px;margin-bottom:24px}
 .red .block{border:none}
 .btitle{font-family:DIN,"Arial Narrow",sans-serif;font-size:30px;margin-bottom:12px;border-left:5px solid var(--brand);padding-left:12px;line-height:1}
+.btitle .bmin{display:block;font-family:AvenirH,Arial,sans-serif;font-size:16px;color:#555;margin-top:6px;line-height:1.2}
 .grid{display:grid;grid-template-columns:1fr 330px;gap:32px;align-items:start}
 .red .grid{grid-template-columns:1fr 300px;gap:28px}
 .months{display:flex;gap:24px}
@@ -64,7 +65,7 @@ h2{font-family:DIN,"DIN Next","Arial Narrow",sans-serif;font-weight:400;font-siz
  h2{font-size:28px}.lead{font-size:16px}
  .key{gap:6px}.k{font-size:13px;padding:4px 10px 4px 4px;gap:6px}
  .sw{width:22px;height:22px}.sw svg{width:13px;height:13px}
- .block{padding:14px;border-radius:10px}.btitle{font-size:24px}
+ .block{padding:14px;border-radius:10px}.btitle{font-size:24px}.btitle .bmin{font-size:14px}
  .grid,.red .grid{grid-template-columns:1fr;gap:16px}
  .months{flex-direction:column;gap:16px}
  .mname{font-size:20px}.g{gap:3px}.h{font-size:10px;letter-spacing:.2px}
@@ -82,7 +83,7 @@ h2{font-family:DIN,"DIN Next","Arial Narrow",sans-serif;font-weight:400;font-siz
 <script>
 (function(){
 var P=new URLSearchParams(location.search),region=(P.get('region')||'toowoomba').toLowerCase();
-var PAGES={oshc:{bg:'red',files:['oshc-brisbane','oshc-sunshinecoast']}};
+var PAGES={oshc:{bg:'red',files:['oshc-brisbane','oshc-goldcoast','oshc-sunshinecoast']}};
 var page=PAGES[region]||{bg:'white',files:[region]};
 var bg=P.get('bg')||page.bg;
 document.getElementById('cal-section').className=bg==='red'?'red':'white';
@@ -107,7 +108,7 @@ function block(b){
  var cal=b.comingSoon?'<div class="soon">Dates coming soon</div>':'<div class="months">'+b.months.map(function(x){return month(x[0],x[1],b.days)}).join('')+'</div>';
  var li=b.list.map(function(r){return '<li class="'+(r.hl?'hl':'')+'">'+esc(r.label)+', '+esc(r.dates)+'</li>'}).join('');
  var side=li?'<aside class="where"><div class="wh">Where our team is</div><ul>'+li+'</ul></aside>':'';
- return '<div class="block'+(b.months.length>1?' multi':'')+'">'+(b.title?'<div class="btitle">'+esc(b.title)+'</div>':'')+'<div class="grid"'+(side?'':' style="grid-template-columns:1fr"')+'>'+cal+side+'</div></div>';}
+ return '<div class="block'+(b.months.length>1?' multi':'')+'">'+(b.title?'<div class="btitle">'+esc(b.title)+(b.min?'<span class="bmin">Minimum spend $'+Number(b.min).toLocaleString('en-AU')+'</span>':'')+'</div>':'')+'<div class="grid"'+(side?'':' style="grid-template-columns:1fr"')+'>'+cal+side+'</div></div>';}
 var key='<div class="key">'+['available','waitlist','locked'].map(function(s){return '<span class="k '+s+'"><span class="sw">'+ICON[s]+'</span>'+LABEL[s]+'</span>'}).join('')+'</div>';
 var head='<h2>Our dates in your area</h2><p class="lead">Green days are open. Amber days have a waitlist. Red days are booked.</p>'+key;
 var root=document.getElementById('root'),base=new URL('data/',location.href).href;

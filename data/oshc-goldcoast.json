@@ -1,0 +1,64 @@
+{
+ "kind": "oshc",
+ "title": "Gold Coast",
+ "min": 1000,
+ "comingSoon": false,
+ "months": [
+  [
+   2026,
+   12
+  ],
+  [
+   2027,
+   1
+  ]
+ ],
+ "days": {
+  "2026-12-14": "available",
+  "2026-12-15": "available",
+  "2026-12-16": "available",
+  "2026-12-17": "available",
+  "2026-12-18": "available",
+  "2026-12-21": "available",
+  "2026-12-22": "available",
+  "2026-12-23": "available",
+  "2027-01-04": "available",
+  "2027-01-08": "available",
+  "2027-01-11": "available",
+  "2027-01-15": "available",
+  "2027-01-18": "available",
+  "2027-01-19": "available",
+  "2027-01-20": "available",
+  "2027-01-21": "available",
+  "2027-01-22": "available"
+ },
+ "list": [
+  {
+   "label": "Gold Coast",
+   "dates": "Mon 14 to Fri 18 Dec",
+   "hl": false
+  },
+  {
+   "label": "Gold Coast",
+   "dates": "Mon 21 to Wed 23 Dec",
+   "hl": false
+  },
+  {
+   "label": "Gold Coast",
+   "dates": "Mon 4 to Fri 8 Jan",
+   "hl": false
+  },
+  {
+   "label": "Gold Coast",
+   "dates": "Mon 11 to Fri 15 Jan",
+   "hl": false
+  },
+  {
+   "label": "Gold Coast",
+   "dates": "Mon 18 to Fri 22 Jan",
+   "hl": false
+  }
+ ],
+ "region": "oshc-goldcoast",
+ "updated": "2026-10-19T19:11+10:00"
+}

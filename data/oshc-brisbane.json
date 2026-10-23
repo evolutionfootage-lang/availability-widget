@@ -29,7 +29,6 @@
   "2027-01-06": "locked",
   "2027-01-07": "waitlist",
   "2027-01-08": "available",
-  "2027-01-11": "available",
   "2027-01-12": "waitlist",
   "2027-01-13": "waitlist",
   "2027-01-15": "available",
@@ -57,7 +56,7 @@
   },
   {
    "label": "Brisbane",
-   "dates": "Mon 11 to Fri 15 Jan",
+   "dates": "Tue 12 to Fri 15 Jan",
    "hl": false
   },
   {
@@ -67,5 +66,5 @@
   }
  ],
  "region": "oshc-brisbane",
- "updated": "2026-10-23T06:02+10:00"
+ "updated": "2026-10-24T06:02+10:00"
 }

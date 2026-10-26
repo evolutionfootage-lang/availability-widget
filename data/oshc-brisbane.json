@@ -30,8 +30,8 @@
   "2027-01-07": "waitlist",
   "2027-01-08": "available",
   "2027-01-12": "waitlist",
-  "2027-01-13": "waitlist",
-  "2027-01-15": "available",
+  "2027-01-13": "available",
+  "2027-01-15": "waitlist",
   "2027-01-18": "available",
   "2027-01-19": "available",
   "2027-01-20": "available",
@@ -66,5 +66,5 @@
   }
  ],
  "region": "oshc-brisbane",
- "updated": "2026-10-26T06:08+10:00"
+ "updated": "2026-10-27T06:10+10:00"
 }

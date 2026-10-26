@@ -24,8 +24,8 @@
   "2026-12-23": "available",
   "2027-01-04": "available",
   "2027-01-08": "available",
+  "2027-01-13": "available",
   "2027-01-14": "waitlist",
-  "2027-01-15": "available",
   "2027-01-18": "available",
   "2027-01-19": "available",
   "2027-01-20": "available",
@@ -50,7 +50,7 @@
   },
   {
    "label": "Sunshine Coast",
-   "dates": "Thu 14 to Fri 15 Jan",
+   "dates": "Wed 13 to Thu 14 Jan",
    "hl": false
   },
   {
@@ -60,5 +60,5 @@
   }
  ],
  "region": "oshc-sunshinecoast",
- "updated": "2026-10-26T06:08+10:00"
+ "updated": "2026-10-27T06:10+10:00"
 }

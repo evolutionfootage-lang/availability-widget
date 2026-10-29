@@ -60,18 +60,13 @@
    "hl": false
   },
   {
-   "label": "Waikato",
+   "label": "Bay of Plenty / Rotorua",
    "dates": "Mon 15 to Fri 19 Feb",
    "hl": false
   },
   {
-   "label": "Bay of Plenty, Rotorua & Lakes",
-   "dates": "Mon 22 to Fri 26 Feb",
-   "hl": false
-  },
-  {
    "label": "Hawke's Bay",
-   "dates": "Mon 1 to Fri 5 Mar",
+   "dates": "Mon 22 to Fri 26 Feb, extended into Mon 1 to Fri 5 Mar",
    "hl": false
   },
   {
@@ -80,11 +75,11 @@
    "hl": false
   },
   {
-   "label": "Kapiti, Hutt & Wellington",
-   "dates": "Mon 15 to Fri 19 Mar",
+   "label": "Kapiti / Hutt / Wellington (incl. Wairarapa)",
+   "dates": "Mon 15 to Sat 20 Mar",
    "hl": false
   }
  ],
  "region": "nztour",
- "updated": "2026-10-29T06:11+10:00"
+ "updated": "2026-10-29T10:15+10:00"
 }

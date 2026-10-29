@@ -15,7 +15,7 @@
  ],
  "days": {
   "2026-12-02": "waitlist",
-  "2026-12-10": "waitlist",
+  "2026-12-10": "locked",
   "2026-12-14": "available",
   "2026-12-15": "available",
   "2026-12-16": "available",
@@ -66,5 +66,5 @@
   }
  ],
  "region": "oshc-brisbane",
- "updated": "2026-10-30T06:09+10:00"
+ "updated": "2026-10-30T08:09+10:00"
 }

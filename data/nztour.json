@@ -21,7 +21,7 @@
   "2027-02-09": "available",
   "2027-02-10": "locked",
   "2027-02-11": "available",
-  "2027-02-12": "available",
+  "2027-02-12": "waitlist",
   "2027-02-15": "waitlist",
   "2027-02-16": "waitlist",
   "2027-02-17": "waitlist",
@@ -44,7 +44,7 @@
   "2027-03-12": "available",
   "2027-03-15": "waitlist",
   "2027-03-16": "waitlist",
-  "2027-03-17": "waitlist",
+  "2027-03-17": "available",
   "2027-03-18": "available",
   "2027-03-19": "available"
  },
@@ -81,5 +81,5 @@
   }
  ],
  "region": "nztour",
- "updated": "2026-10-30T06:09+10:00"
+ "updated": "2026-10-30T08:09+10:00"
 }

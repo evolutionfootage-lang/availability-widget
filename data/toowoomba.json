@@ -9,13 +9,12 @@
   ]
  ],
  "days": {
-  "2026-11-03": "locked",
-  "2026-11-04": "waitlist"
+  "2026-11-04": "locked"
  },
  "list": [
   {
    "label": "Toowoomba",
-   "dates": "Tue 3 to Wed 4 Nov",
+   "dates": "Wed 4 Nov",
    "hl": true
   },
   {
@@ -30,5 +29,5 @@
   }
  ],
  "region": "toowoomba",
- "updated": "2026-11-03T06:01+10:00"
+ "updated": "2026-11-04T06:07+10:00"
 }

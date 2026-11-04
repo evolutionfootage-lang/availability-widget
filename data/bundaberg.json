@@ -13,14 +13,9 @@
   "2026-11-10": "available",
   "2026-11-11": "available",
   "2026-11-12": "locked",
-  "2026-11-13": "waitlist"
+  "2026-11-13": "locked"
  },
  "list": [
-  {
-   "label": "Toowoomba",
-   "dates": "Wed 4 Nov",
-   "hl": false
-  },
   {
    "label": "Bundaberg",
    "dates": "Mon 9 to Fri 13 Nov",
@@ -33,5 +28,5 @@
   }
  ],
  "region": "bundaberg",
- "updated": "2026-11-04T06:07+10:00"
+ "updated": "2026-11-05T06:05+10:00"
 }

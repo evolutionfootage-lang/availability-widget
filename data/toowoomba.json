@@ -1,22 +1,10 @@
 {
  "kind": "town",
  "title": null,
- "comingSoon": false,
- "months": [
-  [
-   2026,
-   11
-  ]
- ],
- "days": {
-  "2026-11-04": "locked"
- },
+ "comingSoon": true,
+ "months": [],
+ "days": {},
  "list": [
-  {
-   "label": "Toowoomba",
-   "dates": "Wed 4 Nov",
-   "hl": true
-  },
   {
    "label": "Bundaberg",
    "dates": "Mon 9 to Fri 13 Nov",
@@ -29,5 +17,5 @@
   }
  ],
  "region": "toowoomba",
- "updated": "2026-11-04T06:07+10:00"
+ "updated": "2026-11-05T06:05+10:00"
 }

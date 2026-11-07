@@ -16,15 +16,12 @@
  "days": {
   "2026-12-02": "locked",
   "2026-12-10": "locked",
-  "2026-12-14": "available",
   "2026-12-15": "available",
   "2026-12-16": "available",
   "2026-12-17": "available",
   "2026-12-18": "available",
-  "2026-12-21": "available",
   "2026-12-22": "available",
   "2026-12-23": "available",
-  "2027-01-04": "available",
   "2027-01-05": "waitlist",
   "2027-01-06": "locked",
   "2027-01-07": "locked",
@@ -32,7 +29,6 @@
   "2027-01-12": "waitlist",
   "2027-01-13": "available",
   "2027-01-15": "waitlist",
-  "2027-01-18": "available",
   "2027-01-19": "available",
   "2027-01-20": "available",
   "2027-01-21": "available",
@@ -41,17 +37,17 @@
  "list": [
   {
    "label": "Brisbane",
-   "dates": "Mon 14 to Fri 18 Dec",
+   "dates": "Tue 15 to Fri 18 Dec",
    "hl": false
   },
   {
    "label": "Brisbane",
-   "dates": "Mon 21 to Wed 23 Dec",
+   "dates": "Tue 22 to Wed 23 Dec",
    "hl": false
   },
   {
    "label": "Brisbane",
-   "dates": "Mon 4 to Fri 8 Jan",
+   "dates": "Tue 5 to Fri 8 Jan",
    "hl": false
   },
   {
@@ -61,10 +57,10 @@
   },
   {
    "label": "Brisbane",
-   "dates": "Mon 18 to Fri 22 Jan",
+   "dates": "Tue 19 to Fri 22 Jan",
    "hl": false
   }
  ],
  "region": "oshc-brisbane",
- "updated": "2026-11-07T06:03+10:00"
+ "updated": "2026-11-08T06:03+10:00"
 }

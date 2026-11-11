@@ -9,14 +9,13 @@
   ]
  ],
  "days": {
-  "2026-11-11": "available",
   "2026-11-12": "locked",
   "2026-11-13": "locked"
  },
  "list": [
   {
    "label": "Bundaberg",
-   "dates": "Wed 11 to Fri 13 Nov",
+   "dates": "Thu 12 to Fri 13 Nov",
    "hl": true
   },
   {
@@ -26,5 +25,5 @@
   }
  ],
  "region": "bundaberg",
- "updated": "2026-11-11T06:00+10:00"
+ "updated": "2026-11-12T06:09+10:00"
 }

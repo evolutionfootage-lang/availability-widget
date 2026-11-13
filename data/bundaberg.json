@@ -1,22 +1,10 @@
 {
  "kind": "town",
  "title": null,
- "comingSoon": false,
- "months": [
-  [
-   2026,
-   11
-  ]
- ],
- "days": {
-  "2026-11-13": "locked"
- },
+ "comingSoon": true,
+ "months": [],
+ "days": {},
  "list": [
-  {
-   "label": "Bundaberg",
-   "dates": "Fri 13 Nov",
-   "hl": true
-  },
   {
    "label": "Sunshine Coast",
    "dates": "Tue 17 to Thu 19 Nov",
@@ -24,5 +12,5 @@
   }
  ],
  "region": "bundaberg",
- "updated": "2026-11-13T06:07+10:00"
+ "updated": "2026-11-14T06:02+10:00"
 }

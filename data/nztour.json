@@ -44,9 +44,9 @@
   "2027-03-12": "waitlist",
   "2027-03-15": "available",
   "2027-03-16": "available",
-  "2027-03-17": "available",
+  "2027-03-17": "waitlist",
   "2027-03-18": "available",
-  "2027-03-19": "available"
+  "2027-03-19": "waitlist"
  },
  "list": [
   {
@@ -81,5 +81,5 @@
   }
  ],
  "region": "nztour",
- "updated": "2026-11-27T06:20+10:00"
+ "updated": "2026-11-27T18:49+10:00"
 }
